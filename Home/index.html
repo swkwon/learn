@@ -9,26 +9,34 @@
 </head>
 <body>
     <div class="clock_style">
-        <span id="clock" >00:00:00</span>
+        <span id="clock">00:00:00</span>
     </div>
-    
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?"/>
-        <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <div id="weather" class="weather_style">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="form_align">
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" id="name" placeholder="What is your name? Write and press enter." class="name_style" />
+            <!-- <input type="submit" class="button-62" value="Log In" /> -->
+        </form>
+    </div>
+    <h1 id="greeting" class="hidden print_name"></h1>
 
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press enter" required/>
-    </form>
-    <ul id="todo-list"></ul>
+    <div class="form_align">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press enter" required class="todo_input_style" />
+        </form>
+        
+    </div>
+    <div class="form_align">
+        <div class="left_align">
+            <ul id="todo-list" class="todo_font_style"></ul>
+        </div>
+    </div>
     <div id="quotes" class="footer">
         <span></span>
         <span></span>
-    </div>
-    <div id="weather">
-        <span class="weather_style"></span>
-        <span class="weather_style"></span>
     </div>
     <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
